@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Th3vious AI Word Puzzle Game - Challenge your vocabulary and word-finding skills with our AI-powered puzzle game">
+  <meta name="keywords" content="word puzzle, word game, AI game, vocabulary game, Th3vious AI">
+  <meta name="author" content="Th3vious AI">
+  <meta property="og:title" content="Th3vious AI Word Puzzle Game">
+  <meta property="og:description" content="Challenge your vocabulary with our AI-powered word puzzle game">
+  <meta property="og:type" content="website">
+  <title>Th3vious AI Word Puzzle Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Th3vious AI Word Puzzle Game</h1>
+    
+    <div class="game-controls">
+      <select id="difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="start-btn" class="control-btn">Start Game</button>
+      <button id="end-btn" class="control-btn" style="display: none;">End Game</button>
+    </div>
+
+    <div class="game-container">
+      <div id="puzzle-display"></div>
+      <input type="text" id="user-input" placeholder="Enter your answer">
+      <div class="button-group">
+        <button id="submit-btn">Submit</button>
+        <button id="hint-btn">Hint</button>
+        <button id="clear-btn">Clear</button>
+      </div>
+    </div>
+    
+    <div class="score-board">
+      <div class="score-item">
+        <span class="label">Score:</span>
+        <span id="score">0</span>
+      </div>
+      <div class="score-item">
+        <span class="label">Streak:</span>
+        <span id="streak">0</span>
+      </div>
+      <div class="score-item">
+        <span class="label">Time:</span>
+        <span id="timer">60</span>s
+      </div>
+    </div>
+  </div>
+
+  <script src="gameEngine.js" type="module"></script>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
